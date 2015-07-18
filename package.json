@@ -5,14 +5,14 @@
     {
       "name": "Web Audio API Autocomplete",
       "details": "https://github.com/hoch/waa-autocomplete",
-      "author": "hoch",
+      "author": "Hongchan Choi",
       "readme": "https://raw.githubusercontent.com/hoch/waa-autocomplete/master/README.md",
       "issues": "https://github.com/hoch/waa-autocomplete/issues",
-      "labels": ["autocomplete", "javascript", "audio"],
+      "labels": ["autocomplete", "snippets"],
       "releases": [
         {
-          "sublime_text": ">=3000",
-          "tags": "v0.0.1"
+          "sublime_text": "*",
+          "tags": true
         }
       ]
     }
