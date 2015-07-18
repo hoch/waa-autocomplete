@@ -1,20 +1,20 @@
 {
-  "schema_version": "3.0.0",
+	"schema_version": "3.0.0",
 
-  "packages": [
-    {
-      "name": "Web Audio API Autocomplete",
-      "details": "https://github.com/hoch/waa-autocomplete",
-      "author": "Hongchan Choi",
-      "readme": "https://raw.githubusercontent.com/hoch/waa-autocomplete/master/README.md",
-      "issues": "https://github.com/hoch/waa-autocomplete/issues",
-      "labels": ["autocomplete", "snippets"],
-      "releases": [
-        {
-          "sublime_text": "*",
-          "tags": true
-        }
-      ]
-    }
-  ]
+	"packages": [
+		{
+			"name": "Web Audio API Autocomplete",
+			"details": "https://github.com/hoch/waa-autocomplete",
+			"author": "Hongchan Choi",
+			"readme": "https://raw.githubusercontent.com/hoch/waa-autocomplete/master/README.md",
+			"issues": "https://github.com/hoch/waa-autocomplete/issues",
+			"labels": ["autocomplete", "snippets"],
+			"releases": [
+				{
+					"sublime_text": "*",
+					"tags": true
+				}
+			]
+		}
+	]
 }
