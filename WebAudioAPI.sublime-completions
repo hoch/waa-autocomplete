@@ -24,34 +24,34 @@
     { "trigger": "suspend\t:AudioContext", "contents": "suspend();" },
     { "trigger": "resume\t:AudioContext", "contents": "resume();" },
     { "trigger": "close\t:AudioContext", "contents": "close();" },
-    { "trigger": "createBuffer\t:AudioContext <AudioBuffer>(numberOfChannels, length, sampleRate)", "contents": "createBuffer(${1:numberOfChannels}, ${2:length}, ${3:sampleRate});" },
+    { "trigger": "createBuffer\t:AudioContext <AudioBuffer> (numberOfChannels, length, sampleRate)", "contents": "createBuffer(${1:numberOfChannels}, ${2:length}, ${3:sampleRate});" },
     { "trigger": "createBufferSource\t:AudioContext <AudioBufferSourceNode>", "contents": "createBufferSource();" },
-    { "trigger": "createMediaElementSource\t:AudioContext <MediaElementSourceNode>(mediaElement)", "contents": "createMediaElementSource(${1:mediaElement});" },
-    { "trigger": "createMediaStreamSource\t:AudioContext <MediaStreamSourceNode>(mediaStream)", "contents": "createMediaStreamSource(${1:mediaStream});" },
+    { "trigger": "createMediaElementSource\t:AudioContext <MediaElementSourceNode> (mediaElement)", "contents": "createMediaElementSource(${1:mediaElement});" },
+    { "trigger": "createMediaStreamSource\t:AudioContext <MediaStreamSourceNode> (mediaStream)", "contents": "createMediaStreamSource(${1:mediaStream});" },
     { "trigger": "createMediaStreamDestination\t:AudioContext <MediaStreamDestination>", "contents": "createMediaStreamDestination();" },
     { "trigger": "createAnalyser\t:AudioContext <AnalyserNode>", "contents": "createAnalyser();" },
     { "trigger": "createGain\t:AudioContext <GainNode>", "contents": "createGain();" },
     { "trigger": "createDelay\t:AudioContext <DelayNode>", "contents": "createDelay();" },
-    { "trigger": "createDelay\t:AudioContext <DelayNode>(maxDelayTime)", "contents": "createDelay(${1:maxDelayTime});" },
+    { "trigger": "createDelay\t:AudioContext <DelayNode> (maxDelayTime)", "contents": "createDelay(${1:maxDelayTime});" },
     { "trigger": "createBiquadFilter\t:AudioContext <BiquadFilterNode>", "contents": "createBiquadFilter();" },
     { "trigger": "createWaveShaper\t:AudioContext <WaveShaperNode>", "contents": "createWaveShaper();" },
     { "trigger": "createPanner\t:AudioContext <PannerNode>", "contents": "createPanner();" },
     { "trigger": "createStereoPanner\t:AudioContext <StereoPannerNode>", "contents": "createStereoPanner();" },
     { "trigger": "createConvolver\t:AudioContext <ConvolverNode>", "contents": "createConvolver();" },
     { "trigger": "createChannelSplitter\t:AudioContext <ChannelSplitterNode>", "contents": "createChannelSplitter();" },
-    { "trigger": "createChannelSplitter\t:AudioContext <ChannelSplitterNode>(numberOfOutputs)", "contents": "createChannelSplitter(${1:numberOfOutputs});" },
+    { "trigger": "createChannelSplitter\t:AudioContext <ChannelSplitterNode> (numberOfOutputs)", "contents": "createChannelSplitter(${1:numberOfOutputs});" },
     { "trigger": "createChannelMerger\t:AudioContext <ChannelMergerNode>", "contents": "createChannelMerger();" },
-    { "trigger": "createChannelMerger\t:AudioContext <ChannelMergerNode>(numberOfInputs)", "contents": "createChannelMerger(${1:numberOfInputs});" },
+    { "trigger": "createChannelMerger\t:AudioContext <ChannelMergerNode> (numberOfInputs)", "contents": "createChannelMerger(${1:numberOfInputs});" },
     { "trigger": "createDynamicsCompressor\t:AudioContext <DynamicsCompressorNode>", "contents": "createDynamicsCompressor();" },
     { "trigger": "createOscillator\t:AudioContext <OscillatorNode>", "contents": "createOscillator();" },
-    { "trigger": "createPeriodicWave\t:AudioContext <PeriodicWave>(real, imag)", "contents": "createPeriodicWave(${1:Float32Array}, ${2:Float32Array});" },
-    { "trigger": "decodeAudioData\t:AudioContext <Promise>(audioData, onsuccess, onerror)", "contents": "decodeAudioData(${1:ArrayBuffer}, ${2:onsuccess}, ${3:onerror});" },
+    { "trigger": "createPeriodicWave\t:AudioContext <PeriodicWave> (real, imag)", "contents": "createPeriodicWave(${1:Float32Array}, ${2:Float32Array});" },
+    { "trigger": "decodeAudioData\t:AudioContext <Promise> (audioData, onsuccess, onerror)", "contents": "decodeAudioData(${1:ArrayBuffer}, ${2:onsuccess}, ${3:onerror});" },
 
     "oncomplete",
     "renderedBuffer",
 
-    { "trigger": "OfflineAudioContext\t(numberOfChannels, length, sampleRate)", "contents": "OfflineAudioContext(${1:numberOfChannels}, ${2:length}, ${3:sampleRate});" },
-    { "trigger": "startRendering()", "contents": "startRendering()" },
+    { "trigger": "OfflineAudioContext\t:OfflineAudioContext (numberOfChannels, length, sampleRate)", "contents": "OfflineAudioContext(${1:numberOfChannels}, ${2:length}, ${3:sampleRate});" },
+    { "trigger": "startRendering\t:OfflineAudioContext", "contents": "startRendering()" },
 
 
     /* audioParam */
@@ -59,23 +59,23 @@
     "value",
     "defaultValue",
 
-    { "trigger": "setValueAtTime\t(value, startTime)", "contents": "setValueAtTime(${1:value}, ${2:startTime});" },
-    { "trigger": "linearRampToValueAtTime\t(value, endTime)", "contents": "linearRampToValueAtTime(${1:value}, ${2:endTime});" },
-    { "trigger": "exponentialRampToValueAtTime\t(value, endTime)", "contents": "exponentialRampToValueAtTime(${1:value}, ${2:endTime});" },
-    { "trigger": "setTargetAtTime\t(targetValue, startTime, timeContant)", "contents": "setTargetAtTime(${1:targetValue}, ${2:startTime}, ${3:timeConstant});" },
-    { "trigger": "setValueCurveAtTime\t(values, startTime, duration)", "contents": "setValueCurveAtTime(${1:Float32Array}, ${2:startTime}, ${3:duration});" },
-    { "trigger": "cancelScheduledValues\t(startTime)", "contents": "cancelScheduledValues(${1:startTime});" },
+    { "trigger": "setValueAtTime\t:AudioParam (value, startTime)", "contents": "setValueAtTime(${1:value}, ${2:startTime});" },
+    { "trigger": "linearRampToValueAtTime\t:AudioParam (value, endTime)", "contents": "linearRampToValueAtTime(${1:value}, ${2:endTime});" },
+    { "trigger": "exponentialRampToValueAtTime\t:AudioParam (value, endTime)", "contents": "exponentialRampToValueAtTime(${1:value}, ${2:endTime});" },
+    { "trigger": "setTargetAtTime\t:AudioParam (targetValue, startTime, timeContant)", "contents": "setTargetAtTime(${1:targetValue}, ${2:startTime}, ${3:timeConstant});" },
+    { "trigger": "setValueCurveAtTime\t:AudioParam (values, startTime, duration)", "contents": "setValueCurveAtTime(${1:Float32Array}, ${2:startTime}, ${3:duration});" },
+    { "trigger": "cancelScheduledValues\t:AudioParam (startTime)", "contents": "cancelScheduledValues(${1:startTime});" },
 
 
     /* audioBuffer */
 
     "duration",
 
-    { "trigger": "getChannelData\t(channelIndex)", "contents": "getChannelData(${1:channelIndex});" },
-    { "trigger": "copyFromChannel\t(destination, channelNumber)", "contents": "copyFromChannel(${1:Float32Array}, ${2:channelNumber});" },
-    { "trigger": "copyFromChannel\t(destination, channelNumber, startInChannel)", "contents": "copyFromChannel(${1:Float32Array}, ${2:channelNumber}, ${3:startInChannel});" },
-    { "trigger": "copyToChannel\t(source, channelNumber)", "contents": "copyToChannel(${1:Float32Array}, ${2:channelNumber});" },
-    { "trigger": "copyToChannel\t(source, channelNumber, startInChannel)", "contents": "copyToChannel(${1:Float32Array}, ${2:channelNumber}, ${3:startInChannel});" },
+    { "trigger": "getChannelData\t:AudioBuffer <Float32Array> (channelIndex)", "contents": "getChannelData(${1:channelIndex});" },
+    { "trigger": "copyFromChannel\t:AudioBuffer (destination, channelNumber)", "contents": "copyFromChannel(${1:Float32Array}, ${2:channelNumber});" },
+    { "trigger": "copyFromChannel\t:AudioBuffer (destination, channelNumber, startInChannel)", "contents": "copyFromChannel(${1:Float32Array}, ${2:channelNumber}, ${3:startInChannel});" },
+    { "trigger": "copyToChannel\t:AudioBuffer (source, channelNumber)", "contents": "copyToChannel(${1:Float32Array}, ${2:channelNumber});" },
+    { "trigger": "copyToChannel\t:AudioBuffer (source, channelNumber, startInChannel)", "contents": "copyToChannel(${1:Float32Array}, ${2:channelNumber}, ${3:startInChannel});" },
 
 
     /* audioNode */
@@ -94,12 +94,12 @@
     "speakers",
     "discrete",
 
-    { "trigger": "connect\t(destination)", "contents": "connect(${1:destination});" },
-    { "trigger": "connect\t(destination, outputIndex)", "contents": "connect(${1:destination}, ${2:outputIndex});" },
-    { "trigger": "connect\t(destination, outputIndex, inputIndex)", "contents": "connect(${1:destination}, ${2:outputIndex}, ${3:inputIndex});" },
-    { "trigger": "disconnect", "contents": "disconnect();" },
-    { "trigger": "disconnect\t(destination)", "contents": "disconnect(${1:destination});" },
-    { "trigger": "disconnect\t(destination, outputIndex)", "contents": "disconnect(${1:destination}, ${2:outputIndex});" },
+    { "trigger": "connect\t:AudioNode (destination)", "contents": "connect(${1:destination});" },
+    { "trigger": "connect\t:AudioNode (destination, outputIndex)", "contents": "connect(${1:destination}, ${2:outputIndex});" },
+    { "trigger": "connect\t:AudioNode (destination, outputIndex, inputIndex)", "contents": "connect(${1:destination}, ${2:outputIndex}, ${3:inputIndex});" },
+    { "trigger": "disconnect\t:AudioNode", "contents": "disconnect();" },
+    { "trigger": "disconnect\t:AudioNode (destination)", "contents": "disconnect(${1:destination});" },
+    { "trigger": "disconnect\t:AudioNode (destination, outputIndex)", "contents": "disconnect(${1:destination}, ${2:outputIndex});" },
 
 
     /* AudioBufferSourceNode */
@@ -113,12 +113,12 @@
 
     "onended",
 
-    { "trigger": "start\t", "contents": "start();" },
-    { "trigger": "start\t(when)", "contents": "start(${1:when});" },
-    { "trigger": "start\t(when, offset)", "contents": "start(${1:when}, ${2:offset});" },
-    { "trigger": "start\t(when, offset, duration)", "contents": "start(${1:when}, ${2:offset}, ${2:duration});" },
-    { "trigger": "stop\t", "contents": "stop();" },
-    { "trigger": "stop\t(when)", "contents": "stop(${1:when});" },
+    { "trigger": "start\t:AudioBufferSourceNode", "contents": "start();" },
+    { "trigger": "start\t:AudioBufferSourceNode (when)", "contents": "start(${1:when});" },
+    { "trigger": "start\t:AudioBufferSourceNode (when, offset)", "contents": "start(${1:when}, ${2:offset});" },
+    { "trigger": "start\t:AudioBufferSourceNode (when, offset, duration)", "contents": "start(${1:when}, ${2:offset}, ${2:duration});" },
+    { "trigger": "stop\t:AudioBufferSourceNode", "contents": "stop();" },
+    { "trigger": "stop\t:AudioBufferSourceNode (when)", "contents": "stop(${1:when});" },
 
 
     /* PannerNode */
@@ -132,9 +132,9 @@
     "coneOuterAngle",
     "coneOuterGain",
 
-    { "trigger": "setPosition\t(x, y, z)", "contents": "setPosition(${1:x}, ${2:y}, ${3:z});" },
-    { "trigger": "setOrientation\t(x, y, z)", "contents": "setOrientation(${1:x}, ${2:y}, ${3:z});" },
-    { "trigger": "setVelocity\t(x, y, z)", "contents": "setVelocity(${1:x}, ${2:y}, ${3:z});" },
+    { "trigger": "setPosition\t:PannerNode (x, y, z)", "contents": "setPosition(${1:x}, ${2:y}, ${3:z});" },
+    { "trigger": "setOrientation\t:PannerNode (x, y, z)", "contents": "setOrientation(${1:x}, ${2:y}, ${3:z});" },
+    { "trigger": "setVelocity\t:PannerNode (x, y, z)", "contents": "setVelocity(${1:x}, ${2:y}, ${3:z});" },
 
 
     /* AudioListner */
@@ -142,9 +142,9 @@
     "dopplerFactor",
     "speedOfSound",
 
-    { "trigger": "setPosition\t(x, y, z)", "contents": "setPosition(${1:x}, ${2:y}, ${3:z});" },
-    { "trigger": "setOrientation\t(x, y, z, xUp, yUp, zUp)", "contents": "setOrientation(${1:x}, ${2:y}, ${3:z}, ${4:xUp}, ${5:yUp}, ${6:zUp});" },
-    { "trigger": "setVelocity\t(x, y, z)", "contents": "setVelocity(${1:x}, ${2:y}, ${3:z});" },
+    { "trigger": "setPosition\t:AudioListner (x, y, z)", "contents": "setPosition(${1:x}, ${2:y}, ${3:z});" },
+    { "trigger": "setOrientation\t:AudioListner (x, y, z, xUp, yUp, zUp)", "contents": "setOrientation(${1:x}, ${2:y}, ${3:z}, ${4:xUp}, ${5:yUp}, ${6:zUp});" },
+    { "trigger": "setVelocity\t:AudioListner (x, y, z)", "contents": "setVelocity(${1:x}, ${2:y}, ${3:z});" },
 
 
     /* StereoPannerNode */
@@ -166,10 +166,10 @@
     "maxDecibels",
     "smoothingTimeConstant",
 
-    { "trigger": "getFloatFrequencyData\t(data)", "contents": "getFloatFrequencyData(${Float32Array});" },
-    { "trigger": "getByteFrequencyData\t(data)", "contents": "getByteFrequencyData(${Float32Array});" },
-    { "trigger": "getFloatTimeDomainData\t(data)", "contents": "getFloatTimeDomainData(${Float32Array});" },
-    { "trigger": "getByteTimeDomainData\t(data)", "contents": "getByteTimeDomainData(${Float32Array});" },
+    { "trigger": "getFloatFrequencyData\t:AnalyserNode (data)", "contents": "getFloatFrequencyData(${Float32Array});" },
+    { "trigger": "getByteFrequencyData\t:AnalyserNode (data)", "contents": "getByteFrequencyData(${Float32Array});" },
+    { "trigger": "getFloatTimeDomainData\t:AnalyserNode (data)", "contents": "getFloatTimeDomainData(${Float32Array});" },
+    { "trigger": "getByteTimeDomainData\t:AnalyserNode (data)", "contents": "getByteTimeDomainData(${Float32Array});" },
 
 
     /* DynamicsCompressorNode */
@@ -202,7 +202,7 @@
     "Q",
     "gain",
 
-    { "trigger": "getFrequencyResponse\t(frequencyHz, magResponse, phaseResponse)", "contents": "getFrequencyResponse(${1:Float32Array}, ${2:Float32Array}, ${3:Float32Array});" },
+    { "trigger": "getFrequencyResponse\t:BiquadFilterNode (frequencyHz, magResponse, phaseResponse)", "contents": "getFrequencyResponse(${1:Float32Array}, ${2:Float32Array}, ${3:Float32Array});" },
 
 
     /* OverSampleType */
@@ -229,17 +229,18 @@
 
     /* OscillatorNode */
 
+    // These are duplicates.
     // "type",
     // "frequency",
     // "detune",
 
     // "onended",
 
-    { "trigger": "start", "contents": "start();" },
-    { "trigger": "start\t(when)", "contents": "start(${1:when});" },
-    { "trigger": "stop", "contents": "stop();" },
-    { "trigger": "stop\t(when)", "contents": "stop(${1:when});" },
-    { "trigger": "setPeriodicWave\t(periodicWave)", "contents": "setPeriodicWave(${1:periodicWave});" },
+    { "trigger": "start\t:OscillatorNode", "contents": "start();" },
+    { "trigger": "start\t:OscillatorNode (when)", "contents": "start(${1:when});" },
+    { "trigger": "stop\t:OscillatorNode", "contents": "stop();" },
+    { "trigger": "stop\t:OscillatorNode (when)", "contents": "stop(${1:when});" },
+    { "trigger": "setPeriodicWave\t:OscillatorNode (periodicWave)", "contents": "setPeriodicWave(${1:periodicWave});" },
 
 
     /* MediaStreamAudioDestinationNode */

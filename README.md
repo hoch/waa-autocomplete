@@ -6,8 +6,6 @@ This is a JavaScript autocompletion package for Web Audio API within SublimeText
 
 ### Using Package Control
 
-_NOTE_: Currently the package is under the review. It will be available in the official Package Control channel soon.
-
 - In SublimeText, open the command pallete by <kbd>COMMAND or CTRL</kbd> + <kbd>SHIFT</kbd> + <kbd>P</kbd>.
 - Select _Install Pacakge_.
 - Search and install _Web Audio API Autocomplete_.
